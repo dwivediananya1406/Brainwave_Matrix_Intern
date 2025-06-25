@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Day Planner App</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div class="container">
     <div class="todo-app">
@@ -14,6 +16,13 @@
         <input type="text" id="input-box" placeholder="Add your text">
         <button onclick="addTask()">Add</button>
       </div>
+      <div class="filters">
+        <button id="show-all" class="filter-btn active">All</button>
+        <button id="show-pending" class="filter-btn">Pending</button>
+        <button id="show-completed" class="filter-btn">Completed</button>
+      </div>
+      <p id="task-counter">Total Tasks: 0 | Completed: 0</p>
+
       <ul id="list-container">
         <!-- Tasks will be added here -->
       </ul>
@@ -21,4 +30,5 @@
   </div>
   <script src="script.js" defer></script>
 </body>
+
 </html>
